@@ -33,6 +33,7 @@ Pre-requisites: docker , docker compose
 ```
 
 2 - Create a .env file and add GEMINI_API_KEY=your_api_key (you can get an api key from [here](https://aistudio.google.com/app/apikeys))
+
 3 - run the app
 ```bash
     docker compose up

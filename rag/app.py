@@ -37,6 +37,7 @@ PASSAGE: '{document}'"
 def main():
 
     st.title("simple RAG app")
+    st.warning("Upload a PDF file to get started!")
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
@@ -66,19 +67,18 @@ def main():
             client=chroma_client,
         )
         collection = chroma_client.get_collection(name="test")
-
     # get the question
-    if prompt := st.chat_input("What do you want to say to your PDF?"):
-        with st.chat_message("user"):
-            st.markdown(prompt)
-            st.session_state.messages.append({"role": "user", "content": prompt})
-        relevent_document = collection.query(query_texts=[prompt], n_results=1)[
-            "documents"
-        ][0][0]
-        answer = model.generate_content(create_prompt(prompt, relevent_document)).text
-        with st.chat_message("bot"):
-            st.markdown(answer)
-            st.session_state.messages.append({"role": "bot", "content": answer})
+        if prompt := st.chat_input("What do you want to say to your PDF?"):
+            with st.chat_message("user"):
+                st.markdown(prompt)
+                st.session_state.messages.append({"role": "user", "content": prompt})
+            relevent_document = collection.query(query_texts=[prompt], n_results=1)[
+                "documents"
+            ][0][0]
+            answer = model.generate_content(create_prompt(prompt, relevent_document)).text
+            with st.chat_message("bot"):
+                st.markdown(answer)
+                st.session_state.messages.append({"role": "bot", "content": answer})
 
 
 if __name__ == "__main__":
