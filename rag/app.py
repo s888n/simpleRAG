@@ -35,7 +35,7 @@ PASSAGE: '{document}'"
 
 def main():
 
-    st.title("simple RAG ap")
+    st.title("simple RAG app")
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
