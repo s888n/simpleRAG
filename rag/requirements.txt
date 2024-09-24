@@ -1,0 +1,9 @@
+altair
+pandas
+streamlit
+# streamlit-chromadb-connection
+langchain_community
+pypdf
+google-generativeai
+langchain-chroma>=0.1.2
+sentence_transformers

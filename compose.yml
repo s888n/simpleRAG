@@ -1,0 +1,35 @@
+services:
+  rag:
+    container_name: rag
+    build:
+      context: ./rag
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - CHROMADB_HOST=chromadb
+      - CHROMADB_PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./rag:/app
+    networks:
+      - rag_net
+
+  chromadb:
+    container_name: chromadb
+    image: chromadb/chroma:latest
+    volumes:
+      - ./chromadb:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma # this is the default path, change it as needed
+      - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-TRUE}
+    ports:
+      - 8000:8000
+    networks:
+      - rag_net
+
+
+networks:
+  rag_net:
+    driver: bridge
