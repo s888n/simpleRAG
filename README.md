@@ -1,5 +1,9 @@
 # RAG (Retrieval Augmented Generation)
 
+
+https://github.com/user-attachments/assets/2feb802e-71e0-445c-8c9e-05b6a4ef1caf
+
+
 ## 1. What is RAG?
 
 - [best explanation of RAG](https://www.youtube.com/watch?v=u47GtXwePms)
@@ -49,9 +53,4 @@ Pre-requisites: docker , docker compose
 - [the paper](https://arxiv.org/pdf/2005.11401)
 - [text splitting strategies](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)
 - [NVIDIA article](https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation)
-
-## Demo
-
-https://github.com/user-attachments/assets/a25d07bd-4778-40cd-8ab5-baf1392118c5
-
 
