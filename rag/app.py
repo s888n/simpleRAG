@@ -55,7 +55,7 @@ def main():
             f.write(uploaded_file.getvalue())
         loader = PyPDFLoader(path)
         docs = loader.load()
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
         splits = text_splitter.split_documents(docs)
         # st.write(splits)
         Chroma.from_documents(
