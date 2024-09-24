@@ -19,7 +19,8 @@ genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 # innitialize the chromadb client
-chroma_client = chromadb.HttpClient(host="chromadb", port=8000, ssl=False)
+chroma_client = chromadb.HttpClient(host=os.environ.get("CHROMADB_HOST"), port=os.environ.get("CHROMADB_PORT")
+, ssl=False)
 chroma_client.heartbeat()
 embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
