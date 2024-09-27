@@ -50,8 +50,10 @@ Pre-requisites: docker , docker compose
 ## Resources
 
 - [google gemini API](https://ai.google.dev/gemini-api/docs)
-- [about RAG](https://arxiv.org/abs/2005.11401)
-- [the paper](https://arxiv.org/pdf/2005.11401)
-- [text splitting strategies](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)
-- [NVIDIA article](https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation)
+- [RAG Paper](https://arxiv.org/pdf/2005.11401)
+- [RAG Blog from nvidia](https://ai.facebook.com/blog/retrieval-augmented-generation-of-human-like-text/)
+- [Text Splitting](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)
+- [Langchain Docs](https://python.langchain.com/docs/introduction/)
+- [Graph RAG](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
+
 
