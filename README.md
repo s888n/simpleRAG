@@ -1,12 +1,26 @@
 # RAG (Retrieval Augmented Generation)
 
-
 https://github.com/user-attachments/assets/2feb802e-71e0-445c-8c9e-05b6a4ef1caf
 
 
 ## 1. What is RAG?
+Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
 
 - [best explanation of RAG](https://www.youtube.com/watch?v=u47GtXwePms)
+
+benefits of RAG:
+
+**building user trust**:
+    Retrieval-augmented generation gives models sources they can cite, like footnotes in a research paper, so users can check any claims. That builds trust.
+
+**clear up ambiguity in a user query**:
+    If a user asks a question that could have multiple interpretations, a retrieval-augmented model can use the context of the conversation to clarify the question and provide a more accurate answer.
+
+**reduce hallucination**:
+    Generative models can sometimes generate text that is not accurate or relevant to the user query. By using retrieval-augmented generation, the model can use facts from external sources to ensure the generated text is accurate and relevant.
+
+**the implementation process is relatively simple**:
+    The implementation process for retrieval-augmented generation is relatively simple compared to other techniques for enhancing generative models, such as reinforcement learning or adversarial training.
 
 ## 2. What are Embeddings?
 
@@ -47,6 +61,9 @@ Pre-requisites: docker , docker compose
 - [Huggingface](https://huggingface.co/docs)
 - optimal chunk size
 
+## remarks
+ - NVIDIA uses LangChain in its reference architecture for retrieval-augmented generation.
+- "RAGs can use any kind of database to store data. Vector stores are often discussed in the same literature as RAGs. If you have a large body of data that you want to query based on the LLM prompt, one way to do it is to use a ML model to transform text into N-dimensional vectors (called embeddings). This allows you to use cosine similarity to assess which pieces of text are close in semantic meaning to one another, and so retrieve relevant information to your RAG query." [reddit answer](https://www.reddit.com/r/MachineLearning/comments/1b5l18k/d_types_of_rag_implementations_and_their_benefits/')
 ## Resources
 
 - [google gemini API](https://ai.google.dev/gemini-api/docs)
