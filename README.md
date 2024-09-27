@@ -60,6 +60,7 @@ Pre-requisites: docker , docker compose
 - [the math behind tokens to vectors](https://medium.com/@amallya0523/how-an-llm-understands-input-the-math-under-the-hood-114ac69f96c6)
 - [Huggingface](https://huggingface.co/docs)
 - optimal chunk size
+- [good article](https://retrieval-tutorials.vercel.app/)
 
 ## remarks
  - NVIDIA uses LangChain in its reference architecture for retrieval-augmented generation.
