@@ -77,4 +77,5 @@ Pre-requisites: docker , docker compose
 - [Not all embeddings models are created equal](https://huggingface.co/spaces/mteb/leaderboard)
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884)
 - [Corrective RAG tutorial by langchain](https://www.youtube.com/watch?v=E2shqsYwxck)
+- [Multimodal RAG](https://www.youtube.com/watch?v=LF7I6raAIL4)
 
