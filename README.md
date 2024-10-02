@@ -6,6 +6,7 @@ https://github.com/user-attachments/assets/2feb802e-71e0-445c-8c9e-05b6a4ef1caf
 ## 1. What is RAG?
 Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
 
+- [What is RAG by IBM](https://www.youtube.com/watch?v=T-D1OfcDW1M)
 - [best explanation of RAG](https://www.youtube.com/watch?v=u47GtXwePms)
 
 benefits of RAG:
@@ -73,5 +74,7 @@ Pre-requisites: docker , docker compose
 - [Text Splitting](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)
 - [Langchain Docs](https://python.langchain.com/docs/introduction/)
 - [Graph RAG](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
-
+- [Not all embeddings models are created equal](https://huggingface.co/spaces/mteb/leaderboard)
+- [Corrective RAG](https://arxiv.org/pdf/2401.15884)
+- [Corrective RAG tutorial by langchain](https://www.youtube.com/watch?v=E2shqsYwxck)
 
