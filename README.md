@@ -78,4 +78,5 @@ Pre-requisites: docker , docker compose
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884)
 - [Corrective RAG tutorial by langchain](https://www.youtube.com/watch?v=E2shqsYwxck)
 - [Multimodal RAG](https://www.youtube.com/watch?v=LF7I6raAIL4)
+- [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval)
 
